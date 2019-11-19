@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Toasties | Checkout</title>
+
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/nav.css">
+        <link rel="stylesheet" type="text/css" href="styles/footer.css">
+        <link rel="stylesheet" type="text/css" href="styles/cart.css">
+
+        <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-auth.js"></script>
+        <script src="firebase/config.js"></script>
+
+        <script src="javascript/cart.js"></script>
+
+        <link rel="icon" href="images/icon.png" type="images/ico">
+    </head>
+    <body>
+        <ul id="navbar">
+            <li class="icon">
+                <a href="/"><img alt="Logo" src="images/logo.png"></a>
+            </li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order</a></li>
+        </ul>
+        <br>
+        <h1 style="text-align:center;">CHECKOUT</h1>
+        <div id="order-input">
+            <div id="inputs">
+                <input type="text" id="name" placeholder="Full Name">
+                <br>
+                <input type="email" id="email" placeholder="Email">
+                <br>
+                <input type="text" id="phone" placeholder="Callback Phone #">
+            </div>
+            <hr>
+            <h3 style="text-align:center;">Your Order</h3>
+            <div id="cart-items">
+                Cart Empty
+            </div>
+            <hr>
+            <h3 style="text-align:center;">Total: $<span id="total">0.00</span></h3>
+            <div id="buttons">
+                <button onclick="goBack()">Change Order</button>
+                <button onclick="placeOrder()">Place Order</button>
+            </div>
+        </div>
+        <br>
+        <div class="footer">
+            <h3>Open Hours</h3>
+            <p>Monday: 11AM - 2PM</p>
+            <p>Tuesday: 10:30AM - 11:30AM; 12:15PM - 2:30PM</p>
+            <p>Wednesday: 11AM - 2PM</p>
+            <p>Thursday: 11AM - 2PM</p>
+            <p>Friday: 11AM - 2PM</p>
+            <p>Saturday: CLOSED</p>
+            <p>Sunday: CLOSED</p>
+        </div>
+    </body>
+</html>

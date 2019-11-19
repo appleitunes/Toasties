@@ -1,0 +1,32 @@
+#order-input {
+    width: fit-content;
+    margin: auto;
+}
+
+#order-input #inputs {
+    text-align: right;
+    line-height: 3em;
+}
+
+#order-input input[type=text], input[type=email] {
+    padding: 0.5em;
+    width: 30em;
+}
+
+#order-input #cart-items {
+    width: 90%;
+    margin: auto;
+}
+
+#order-input #buttons {
+    text-align: center;
+}
+
+#buttons button {
+    width: 8em;
+    height: 3em;
+    background-color: #00a0d0;
+    color: #ebebeb;
+    font-size: 1em;
+    cursor: pointer;
+}

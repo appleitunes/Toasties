@@ -1,0 +1,49 @@
+#start-order {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-weight: bold;
+}
+
+#start-order button {
+    height: 3em;
+    border: none;
+    color: #ebebeb;
+    background-color: #00a0d0;
+    padding: 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: 0.15s;
+    font-size: 1em;
+}
+
+#start-order button:hover {
+    background-color: #007ca1;
+}
+
+#pics {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: auto;
+    width: 45em;
+    max-width: 90%;
+    text-align: center;
+    background-color: black;
+    border-radius: 1em;
+}
+
+#pics img {
+    width: 45%;
+    height: auto;
+}
+
+#location {
+    text-align: center;
+}
+
+#logo {
+    width: 30em;
+    height: auto;
+    margin: auto;
+    max-width: 90%;
+}

@@ -1,0 +1,32 @@
+.center {
+    display: block;
+
+    width: fit-content;
+    margin: auto;
+
+    text-align: center;
+}
+
+.link {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+#create_account, #signed-in{
+    display: none;
+}
+
+#data {
+    text-align: left;
+}
+
+.orders {
+    border: solid 1px gray;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.order {
+    /* border: solid; */
+}

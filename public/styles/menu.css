@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+table {
+    width: 50em;
+    max-width: 90%;
+    margin: auto;
+}
+
+#menu {
+    margin: auto;
+    width: 90%;
+    height: auto;
+}
+
+img {
+    width: 10em;
+    height: auto;
+}

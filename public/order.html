@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Toasties | Order</title>
+
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/nav.css">
+        <link rel="stylesheet" type="text/css" href="styles/footer.css">
+        <link rel="stylesheet" type="text/css" href="styles/order.css">
+
+        <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-auth.js"></script>
+        <script src="firebase/config.js"></script>
+        <script src="javascript/order.js"></script>
+
+        <link rel="icon" href="images/icon.png" type="images/ico">
+    </head>
+    <body>
+        <ul id="navbar">
+            <li class="icon">
+                <a href="/"><img alt="Logo" src="images/logo.png"></a>
+            </li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order</a></li>
+        </ul>
+        <br>
+        <h1 style="text-align:center;">MENU</h1>
+        <br>
+        <div id="item-list">
+            <div class="item-container">
+                <div class="item">
+                    <h3>Press To Panini - $4.50</h3>
+                    <p>Ciabatta Bread, Mozzarella, Turkey, Pesto, Tomato, Mayo</p>
+                    <button onclick="addItem('Press To Panini', 4.5)">Add Item</button>
+                    <button onclick="addItem('Press To Panini', 4.5, true)">Add Combo</button>
+                </div>
+            </div>
+
+            <div class="item-container">
+                <div class="item">
+                    <h3>Jack Hammer Panini - $4.50</h3>
+                    <p>Ciabatta bread, Pepper Jack, Ham, Pesto, Tomato, Mayo</p>
+                    <button onclick="addItem('Jack Hammer Panini', 4.5)">Add Item</button>
+                    <button onclick="addItem('Jack Hammer Panini', 4.5, true)">Add Combo</button>
+                </div>
+            </div>
+
+            <div class="item-container">
+                <div class="item">
+                    <h3>Chicken BBQ Panini - $5.00</h3>
+                    <p>Ciabatta bread, Pepper Jack, Rotisserie Chicken, BBQ Sauce, Pickles, Mayo</p>
+                    <button onclick="addItem('Chicken BBQ Panini', 5)">Add Item</button>
+                    <button onclick="addItem('Chicken BBQ Panini', 5, true)">Add Combo</button>
+                </div>
+            </div>
+
+            <div class="item-container">
+                <div class="item">
+                    <h3>Grilled Cheesy Panini - $3.50</h3>
+                    <p>Ciabatta bread, Mozzarella, Mayo</p>
+                    <button onclick="addItem('Grilled Cheesy Panini', 3.5)">Add Item</button>
+                    <button onclick="addItem('Grilled Cheesy Panini', 3.5, true)">Add Combo</button>
+                </div>
+            </div>
+
+            <div class="item-container">
+                <div class="item">
+                    <h3>Tomato Basil - $2.50</h3>
+                    <p>Tomato Basil Soup</p>
+                    <button onclick="addItem('Tomato Basil', 2.5)">Add Item</button>
+                    <button onclick="addItem('Tomato Basil', 2.5, true)">Add Combo</button>
+                </div>
+            </div>
+
+            <div class="item-container">
+                <div class="item">
+                    <h3>Chocolate Thunder - $2.50</h3>
+                    <p>Cinnamon Swirl bread, Jet-puffed, Nutella</p>
+                    <button onclick="addItem('Chocolate Thunder', 2.5)">Add Item</button>
+                    <button onclick="addItem('Chocolate Thunder', 2.5, true)">Add Combo</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="cart">
+            <h1>MY ORDER</h1>
+            <div id="checkout-items">
+                <p>Awaiting your selections</p>
+            </div>
+            <hr>
+            <p>Total: $<span id="total">0.00</span></p>
+            <button id="checkout-button" onclick="checkOut()">Checkout</button>
+        </div>
+        <br>
+        <div class="footer">
+            <h3>Open Hours</h3>
+            <p>Monday: 11AM - 2PM</p>
+            <p>Tuesday: 10:30AM - 11:30AM; 12:15PM - 2:30PM</p>
+            <p>Wednesday: 11AM - 2PM</p>
+            <p>Thursday: 11AM - 2PM</p>
+            <p>Friday: 11AM - 2PM</p>
+            <p>Saturday: CLOSED</p>
+            <p>Sunday: CLOSED</p>
+        </div>
+    </body>
+</html>
